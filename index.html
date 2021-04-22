@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div>
+        <div class="question">QUESTION :</div>
+        <div class="head">
+          Write a function to find the longest common prefix string amongst an
+          array of strings.
+          <p class="condition">
+            If there is no common prefix, return an empty string "".
+          </p>
+        </div>
+        <div class="explanation">EXPLANATION :</div>
+        <div class="example"><strong>Example</strong> 1 :</div>
+        <div class="output">
+          <strong>Input</strong>: strs = ["flower","flow","flight"] <br />
+          <strong>Output</strong>: "fl"
+        </div>
+        <div class="example">Example 2 :</div>
+        <div class="output">
+          <strong>Input</strong> : strs = ["dog","racecar","car"]
+          <br />
+          <strong>Output</strong>: ""
+          <br />
+          <strong>Explanation</strong> : There is no common prefix among the
+          input strings.
+        </div>
+        <div class="solution">
+          <h1 class="solution">SOLUTION</h1>
+          <div class="img-container">
+            <img class="img" src="./img//Снимок экрана (16).png" alt="" />
+          </div>
+        </div>
+        <div class="solution_explanation">
+          <div class="single-solution">
+            <div class="text">
+              1. WE CHECK LENGTH OF ARRAY . IF ARRAY IS EMPTY THAN RETURN ""
+              EMPTY VALUE
+            </div>
+            <div class="img-content">
+              <img class="img-expl" src="./img/first-step.png" alt="" />
+            </div>
+          </div>
+          <div class="single-solution">
+            <div class="text">
+              2. LETS DECLARE 2 VARIABLES . <code>let longest=""</code> ,
+              <code>let firstword=strs[0]</code>
+            </div>
+            <div class="img-content">
+              <img class="img-expl" src="./img/second-step.png" alt="" />
+            </div>
+          </div>
+          <div class="single-solution">
+            <div class="text">
+              3.NOW WE ARE ON MOST COMPLEX PART . FIRST THING WE SHOULD DO IS
+              ITERATE OVER <code>let firstword=strs[0]</code> WHY WE ITERATING
+              OVER THIS VARIABLE ? ANSWER IS WE WILL compare the char of the
+              first word with char of each of the other words IF THE CHARS ARE
+              NOT MATCHING RETURN <code>let longest=""</code> THIS VARIABLE .
+              FINALLY If all words have a matching char, append it to the
+              longest common prefix.
+            </div>
+            <div class="img-content">
+              <img class="img-expl" src="./img/step-3.PNG" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
