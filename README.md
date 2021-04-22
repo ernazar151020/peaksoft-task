@@ -1,3 +1,3 @@
 ## PEAKSOFT SCHOOL HOMEWORK
 
-[VIEW DEMO](peaksoft-homework.netlify.app)
+[VIEW DEMO](https://peaksoft-homework.netlify.app/)
